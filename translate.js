@@ -1,5 +1,5 @@
 function Translate(word,language){
-    this.apikey="e56a7f4b5bmsh3d4776231d89aefp143651jsn5372e4743159";
+    this.apikey="apikey";
     this.word=word;
     this.language=language;
     
@@ -17,7 +17,7 @@ Translate.prototype.translateWord=function(callback){
     this.xhr.open("POST",`https://kiara-translate.p.rapidapi.com/get_translated/`);
     this.xhr.setRequestHeader("content-type", "application/json");
     this.xhr.setRequestHeader("format","json");
-    this.xhr.setRequestHeader("x-rapidapi-key", "e56a7f4b5bmsh3d4776231d89aefp143651jsn5372e4743159");
+    this.xhr.setRequestHeader("x-rapidapi-key", "apikey");
     this.xhr.setRequestHeader("x-rapidapi-host", "kiara-translate.p.rapidapi.com");
    
     
